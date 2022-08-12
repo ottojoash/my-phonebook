@@ -1,0 +1,90 @@
+body {
+    background-color: #dad8d8;
+    padding: 10px;
+}
+
+.main {
+    background-color: #FFF;
+    min-width: 340px;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(190, 190, 190, 0.8);
+}
+
+.filter {
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#close {
+    display: none;
+    position: absolute;
+    margin-right: 7px;
+}
+
+.scrool {
+    max-height: 378px;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    padding-left: 10px;
+}
+
+.scrool::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrool::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    background-color: #F5C100;
+}
+
+.form {
+    padding: 0 10px;
+}
+
+table {
+    cursor: pointer;
+    text-align: start;
+}
+
+.relative {
+    position: relative;
+}
+
+#warn {
+    display: none;
+    position: absolute;
+    top: -18px;
+    right: 4px;
+    font-size: 13px;
+    color: #CA4242;
+}
+
+.del {
+    color: #bbbbbb;
+}
+
+.del:hover {
+    color: #ff0000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+@media only screen and (max-width: 420px) {
+    .main {
+        margin: 10px auto;
+        padding: 15px 10px;
+    }
+}
